@@ -2,12 +2,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Molik Mart</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Molik Mart - Online Shopping</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#f5f7f7;color:#222}
+header{background:#115e59;color:white;padding:20px;text-align:center}
+header h1{font-size:30px}
+header p{margin-top:7px}
+.search{padding:15px;background:white;text-align:center}
+.search input{width:90%;padding:13px;border:1px solid #ddd;border-radius:8px}
+nav{background:#fff;padding:15px;text-align:center}
+nav a{color:#115e59;text-decoration:none;margin:8px;font-weight:bold}
+.hero{background:#ccfbf1;text-align:center;padding:55px 15px}
+.hero h2{font-size:30px;color:#115e59}
+.hero p{margin:15px 0}
+button{background:#115e59;color:white;border:0;padding:12px 22px;border-radius:7px}
+.section{padding:30px 15px;text-align:center}
+.categories{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:20px}
+.category{background:white;padding:22px 15px;border-radius:10px;min-width:135px;box-shadow:0 2px 8px #0001}
+.products{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin-top:20px}
+.product{background:white;padding:15px;border-radius:10px;box-shadow:0 2px 8px #0001}
+.product .image{height:100px;background:#e5eeee;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:35px}
+.product h3{margin:12px 0 7px;font-size:16px}
+.price{color:#115e59;font-weight:bold;margin-bottom:10px}
+footer{background:#115e59;color:white;text-align:center;padding:25px;margin-top:30px}
+</style>
 </head>
 <body>
-  <h1>Welcome to Molik Mart!</h1>
-  <p>Your One-Stop Online Shopping Store.</p>
+
+<header>
+<h1>Molik Mart</h1>
+<p>Your One-Stop Online Shopping Store</p>
+</header>
+
+<div class="search">
+<input type="search" placeholder="Search your favourite products...">
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#categories">Categories</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<h2>Welcome to Molik Mart!</h2>
+<p>Everything You Need, All in One Place.</p>
+<button>Shop Now</button>
+</section>
+
+<section class="section" id="categories">
+<h2>Shop by Category</h2>
+<div class="categories">
+<div class="category">📱<p>Electronics</p></div>
+<div class="category">👕<p>Fashion</p></div>
+<div class="category">🏠<p>Home & Living</p></div>
+<div class="category">⌚<p>Accessories</p></div>
+</div>
+</section>
+
+<section class="section" id="products">
+<h2>Featured Products</h2>
+<div class="products">
+<div class="product">
+<div class="image">⌚</div>
+<h3>Smart Watch</h3>
+<p class="price">৳850</p>
+<button>View Product</button>
+</div>
+<div class="product">
+<div class="image">🎧</div>
+<h3>Headphones</h3>
+<p class="price">৳600</p>
+<button>View Product</button>
+</div>
+<div class="product">
+<div class="image">🎒</div>
+<h3>Travel Bag</h3>
+<p class="price">৳950</p>
+<button>View Product</button>
+</div>
+<div class="product">
+<div class="image">💡</div>
+<h3>Smart Lamp</h3>
+<p class="price">৳450</p>
+<button>View Product</button>
+</div>
+</div>
+</section>
+
+<footer id="contact">
+<h3>Molik Mart</h3>
+<p>Thank you for shopping with us!</p>
+<p>© 2026 Molik Mart. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
